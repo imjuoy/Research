@@ -5,6 +5,29 @@
 <title>Insert title here</title>
 </head>
 <body>
-Hi there this is the index file
+<form name = "gitInputform" method = "get" action = "gitSeearch">
+<div style="text-align:center">
+Please enter the Query: <input type = "text" id = "QueryTag" name = "Query">
+<br><br>
+Please enter the language: <input type = "text" id = "LanguageTag" name = "Language">
+<br><br>
+Please enter the state: <input type = "text" id = "StateTag" name = "State">
+<br><br>
+ <p>
+    <label>Please select any location below:</label>
+    <select name = "SortCriteriaList">
+    <option value = "created">Created</option>
+    </select>
+</p>
+ <p>
+  <label>Please enter your sort order:</label>
+  <select name = "mySortOrder">
+  <option value ="asc">ASC</option>
+  <option value = "desc">DESC</option>
+  </select> 
+  </p>
+<button type="submit" name ="My button" id ="4" onclick="gitSearch.java">Submit</button>
+</div>
+</form>
 </body>
 </html>
